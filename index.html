@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" href="img/gus-anim.gif" as="image" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
@@ -18,7 +19,12 @@
     <section class="main-page">
       <div class="wrapper">
         <div class="main-page-left-side">
-          <img class="logo" src="img/logo black.svg" alt="GOIT" />
+          <a
+            class="logo"
+            href="https://www.education.ua/courses/company/29402"
+            target="blank"
+            ><img class="logo" src="img/logo black.svg" alt="GOIT"
+          /></a>
 
           <div class="main-page-text-container">
             <p class="main-page-text-hello">Доброго вечора, ми з України</p>
@@ -31,15 +37,17 @@
               народу. Слава Україні!
             </p>
 
-            <button class="main-page-button" id="go-to-form-btn">Запустити гуся</button>
+            <button class="main-page-button" id="go-to-form-btn">
+              Запустити гуся
+            </button>
           </div>
         </div>
-        <img src="img/gus.svg" alt="Banderogus" />
+        <img class="banderogus" src="img/gus.svg" alt="Banderogus" />
       </div>
     </section>
 
     <section class="gus-facts">
-      <img src="img/trezub.svg" alt="Trusub" />
+      <img class="trusub" src="img/trezub.svg" width="32px" alt="Trusub" />
       <h2 class="gus-facts-header">Цікаві факти про бандерогусей</h2>
       <p class="gus-facts-desc">
         Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки можуть
@@ -48,7 +56,7 @@
       </p>
       <div class="wrapper">
         <div class="gus-facts-item">
-          <img src="img/gus1.svg" alt="Gus fact 1" />
+          <img src="img/gus1.svg" alt="Gus fact 1" class="gus-facts-img" />
           <h3 class="gus-facts-item-title">Система навігації</h3>
           <p class="gus-facts-item-desc">
             Супутниковий GPS та ехолокатори розпізнають ворожу техніку навіть на
@@ -56,7 +64,7 @@
           </p>
         </div>
         <div class="gus-facts-item">
-          <img src="img/gus2.svg" alt="Gus fact 2" />
+          <img src="img/gus2.svg" alt="Gus fact 2" class="gus-facts-img" />
           <h3 class="gus-facts-item-title">Очі-тепловізори</h3>
           <p class="gus-facts-item-desc">
             Допомагають виявити характер сигнатури об’єктів та значно підвищують
@@ -64,7 +72,7 @@
           </p>
         </div>
         <div class="gus-facts-item">
-          <img src="img/gus3.svg" alt="Gus fact 3" />
+          <img src="img/gus3.svg" alt="Gus fact 3" class="gus-facts-img" />
           <h3 class="gus-facts-item-title">Байракрила</h3>
           <p class="gus-facts-item-desc">
             Можуть нести 2-4 керовані ракети, що вражають ціль на відстані
@@ -73,22 +81,35 @@
         </div>
       </div>
     </section>
-    <section class="gus-facts">
+
+    <section class="form-page">
       <form action="#" class="form" netlify id="form">
         <img src="img/trezub.svg" />
         <h3 class="form-title">Поділися, будь ласка, поштою</h3>
         <p class="form-desc">та запиши гуся до бандерозагону</p>
-        <div class="form-fild">
+        <div class="form-fild-name">
           <label for="user-name" class="label-form">Ім'я</label>
-          <input type="text" class="form-input" id="user-name" name="Ім'я користувача" />
+          <input
+            type="text"
+            class="form-input"
+            id="user-name"
+            name="Ім'я користувача"
+          />
         </div>
-        <div class="form-fild">
+        <div class="form-fild-email">
           <label for="user-email" class="label-form">Email </label>
-          <input type="email " class="form-input" id="user-email" name="Пошта користувача" />
+          <input
+            type="email"
+            class="form-input"
+            id="user-email"
+            name="Пошта користувача"
+          />
         </div>
         <button class="main-page-button" id="launch-btn">Запустити гуся</button>
       </form>
     </section>
+
     <script src="js/form.js"></script>
   </body>
 </html>
+
